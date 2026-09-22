@@ -18,7 +18,7 @@ public class ExamService {
                                       int totalQuestions,
                                       int correctAnswers) {
         // Display the calculated examination result
-        int score = totalQuestions - correctAnswers;
+        int score = correctAnswers;
 
         ExamResult result = new ExamResult(
                 studentName,
