@@ -24,7 +24,7 @@ public class LoginController {
         return studentRepository.findByUsername(student.getUsername())
                 .filter(existingStudent ->
                         existingStudent.getPassword().equals(student.getPassword()))
-                .map(existingStudent -> "Login successful")
+                .map(existingStudent -> "Login successful! Welcome to the Online Examination System")
                 .orElse("Invalid username or password");
     }
 }
