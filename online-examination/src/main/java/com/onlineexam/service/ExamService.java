@@ -17,7 +17,7 @@ public class ExamService {
     public ExamResult calculateResult(String studentName,
                                       int totalQuestions,
                                       int correctAnswers) {
-
+        // Display the calculated examination result
         int score = totalQuestions - correctAnswers;
 
         ExamResult result = new ExamResult(
