@@ -26,7 +26,7 @@ public class ExamService {
                 correctAnswers,
                 score
         );
-
+        // Save the calculated examination result
         return examResultRepository.save(result);
     }
 }
