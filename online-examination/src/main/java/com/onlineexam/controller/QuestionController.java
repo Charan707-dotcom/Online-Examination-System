@@ -25,7 +25,7 @@ public class QuestionController {
 
     @GetMapping
     public List<Question> getAllQuestions() {
-        // Retrieve examination questions
+        
         return questionRepository.findAll();
     }
 
